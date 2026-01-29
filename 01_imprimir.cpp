@@ -52,6 +52,24 @@ int main(){
 	//del compilador.
 	//deberá agregar el parametro -std=c++11 en las opciones del compilador
 	//para que no le genere error.
+	cout << R"(Hola este es texto RAW, esto no es un salto de linea \n)" << endl;
+	cout << R"(RAW es soportado por C++ 11 (debe configurarla) )" << endl;
+	//note que va una R antes del String
+	//note que van parentesis al inicio y al final del String
+	
+	//el texto Raw soporta cout de varios renglones:
+	cout << R"(Esta es la linea 1
+Esta es la linea 2
+Esta es la linea 3)";
+
+	//pausar la ejecucion del codigo:
+	cout << endl;
+	system("pause");
+
+	//limpiar la pantalla del terminal
+	system("cls"); //si usa Linux o MacOS en lugar de cls se coloca clear
+	
+	cout << "Adios" << endl;
 	
 	return 123;
 }
