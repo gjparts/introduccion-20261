@@ -80,5 +80,89 @@ int main(){
 	
 	cout << Mascotas << endl;
 	
+	//declaracion de una variable sin inicializar:
+	int variable1;
+	//el tipo de dato de esta variable es int el cual se usa para registrar un numero entero
+	//imprimir el valor de una variable
+	cout << "El valor de variable1 es " << variable1 << endl;
+	//Importante: en C++ no es obligatorio colocarle un valor de inicio
+	//a las variables; pero se recomienda porque si no lo hace C++ le va a asignar
+	//un valor el cual puede ser CERO o cualquier otro numero que encuentre en la memoria
+	
+	//cuando se declara una variable se recomienda inicilaizarla con el valor
+	//aunque este sea cero.
+	int variable2 = 0;
+	cout << "El valor de variable2 es " << variable2 << endl;
+	int variable3 = 200;
+	cout << "El valor de variable3 es " << variable3 << endl;
+	
+	//tambien puede declarar la variable sin inicializar y luego ponerle el valor
+	int variable4;
+	variable4 = 777;
+	cout << "El valor de variable4 es " << variable4 << endl;
+	
+	//declarar multiples variables del mismo tipo al mismo tiempo (sin inicializar)
+	int num1, num2, num3;
+	num1 = 60;
+	num3 = 80;
+	cout << "El valor de num1 es " << num1 << endl;
+	cout << "El valor de num2 es " << num2 << endl;
+	cout << "El valor de num3 es " << num3 << endl;
+	
+	//declarar multiples variables del mismo tipo al mismo tiempo inicializadas
+	int cifra1 = 7, cifra2 = 400, cifra3 = -48;
+	cout << "El valor de cifra1 es " << cifra1 << endl;
+	cout << "El valor de cifra2 es " << cifra2 << endl;
+	cout << "El valor de cifra3 es " << cifra3 << endl;
+	
+	/*que es eso de int?
+	int se refiere a que la variable almacena un valor cuyo tipo de dato
+	es un numero entero pero de 4 bytes (32 bit).*/
+
+	//existen otros tipos de datos? si
+	/*Tipos de dato para almacenar numeros decimales:
+	float: se usa para almacenar numeros con decimales de 4 bytes (32 bit) lo que se conoce
+	       como numero decimal de baja precision.
+	double: se usa para almacenar numeros con decimales de 8 bytes (64 bit) lo que se conoce
+	       como numero decimal de alta precision.*/
+	float salario = 36245.43;
+	double valorGrande = 3.141592653589793;
+	
+	cout << "el valor de salario es: " << salario << endl;
+	cout << "el valorGrande es: " << valorGrande << endl;
+	
+	/*tipo de dato long long
+	permite guardar un numero entero de alta precision de 8 bytes (64 bit)
+	a diferencia de int que es de 4 bytes (32 bit).
+	Se usa para guardar numeros enteros mayores a 2147483647.
+	long long no debe superar enteros mayores a 9223372036854775807
+	*/
+	long long enteroGrande = 9223372036854775807;
+	cout << "el valor de enteroGrande es: " << enteroGrande << endl;
+	
+	/*tipo de dato char: almacena solo un caracter.
+	una variable char mide 1 byte (8 bit)
+	para sacar el caracter comilla simple use Alt+39*/
+	char c1 = 'z';
+	char c2 = '5';
+	char c3 = '$';
+	cout << "el valor de c1 es: " << c1 << endl;
+	cout << "el valor de c2 es: " << c2 << endl;
+	cout << "el valor de c3 es: " << c3 << endl;
+	
 	return 1234;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
