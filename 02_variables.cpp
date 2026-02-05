@@ -146,9 +146,41 @@ int main(){
 	char c1 = 'z';
 	char c2 = '5';
 	char c3 = '$';
+	//ALT+92 es slash inverso
+	char c4 = '\\';
 	cout << "el valor de c1 es: " << c1 << endl;
 	cout << "el valor de c2 es: " << c2 << endl;
 	cout << "el valor de c3 es: " << c3 << endl;
+	cout << "el valor de c4 es: " << c4 << endl;
+	
+	//tipo de dato booleano: guarda true o false (1 bit)
+	//se llama asi en honor a George Boole
+	bool respuesta = true;
+	cout << "El valor de respuesta es " << respuesta << endl;
+	respuesta = false;
+	cout << "El valor de respuesta es " << respuesta << endl;
+	//C++ imprime a true como 1, y a false como 0
+	
+	/*tipo de dato string: guarda una cadena de texto la cual
+	es una coleccion de elementos de tipo char.
+	Su tamaño en bytes dependera de la cantidad de caracteres
+	que tenga el string, cada caracter mide 1 byte.*/
+	string nombre = "Gerardo Portillo";
+	string fruta = "Sandia";
+	cout << nombre << endl;
+	cout << fruta << endl;
+	cout << "---------------------------------" << endl;
+	
+	//Mutabilidad de variables: es la capacidad de las variables para
+	//ser reasignadas o sobre-escritas. Ejemplo:
+	float precio = 60.25;
+	cout << "el precio es " << precio << endl;
+	precio = 10.80;
+	cout << "el precio es " << precio << endl;
+	precio = 50;
+	cout << "el precio es " << precio << endl;
+	precio = 8.35;
+	cout << "el precio es " << precio << endl;
 	
 	return 1234;
 }
