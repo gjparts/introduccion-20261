@@ -130,7 +130,7 @@ int main(){
 	
 	numero = -9;
 	double absoluto = abs(numero);
-	cout << "El valor absoluto de " << numero << " es " << abs(numero) << endl;
+	cout << "El valor absoluto de " << numero << " es " << absoluto << endl;
 	
 	return 345;
 }
