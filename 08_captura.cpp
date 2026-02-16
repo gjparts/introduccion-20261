@@ -17,4 +17,6 @@ int main(){
 	double denominador = pow(c*d,1.0/3.0);
 	double resultado = numerador/denominador-7;
 	cout << "Resultado: " << resultado << endl;
+	
+	return 123;
 }
