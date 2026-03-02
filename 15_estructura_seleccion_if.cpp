@@ -60,6 +60,33 @@ int main(){
 	El programa va a mostrar un mensaje indicando si se aprobo o reprobo.
 	-> Si la calificacion es mayor o igual a 60 muestre: APROBADO
 	-> Si la calificacion es menor que 60 muestre: REPROBADO*/
+	int calificacion;
+	cout << "Digite su calificacion: ";
+	cin >> calificacion;
+	
+	if( calificacion >= 60 )
+		cout << "APROBADO" << endl;
+		
+	if( calificacion < 60 )
+		cout << "REPROBADO" << endl;
+	
+	//Modificador else
+	//se usa para especificar el curso de accion en caso de que la
+	//condicion planteada no se cumpla. Ejemplo:
+	//hacer una pausa
+	system("pause");
+	//limpiar la pantalla
+	system("cls");
+	int nota;
+	cout << "Digite su calificacion: ";
+	cin >> nota;
+	
+	if( nota >= 60 )
+		cout << "APROBADO" << endl;
+	else
+		cout << "REPROBADO" << endl;	
+	//utilice else cuando tenga dos rutas posibles
+		
 	
 	return 123;
 }
