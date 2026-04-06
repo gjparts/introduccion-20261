@@ -22,7 +22,7 @@ int main(){
 	a) Si es solo una instruccion no es necesario el uso de llaves
 	b) Si son varias instrucciones a repetir; entonces si es necesario el uso de llaves
 	*/
-	//haga un programa que imprima que los numeros del 1 al 10
+	//haga un programa que imprima los numeros del 1 al 10
 	//en este caso usare for porque se donde empieza y se donde termina (finita)
 	for(int i = 1; i <= 10; i++)
 		cout << i << endl;	//esta instruccion se hara 10 veces
