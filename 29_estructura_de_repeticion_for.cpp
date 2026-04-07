@@ -139,6 +139,31 @@ int main(){
 	}
 	cout << "La suma de los numeros leidos es: " << suma << endl;
 	
+	/*Ejercicio en clase: haga un programa que pregunte 6 numeros enteros al usuario.
+	El programa debera imprimir cuantos de los numeros digitados son pares y cuantos
+	son impares.
+	Requisito: resuelvalo utilizando una estructura de repeticion for.*/
+	
+	//variables contador
+	int par = 0, impar = 0;
+	
+	for(int i = 1; i <= 6; i++)
+	{
+		int num; //variable temporal para leer cada numero
+		cout << "Digite un numero entero: ";
+		cin >> num;
+		
+		//clasificar el numero leido:
+		if( num%2 == 0 )
+			par++;
+		else
+			impar++;
+	}
+	//resultados:
+	cout << "Pares leidos: " << par << endl;
+	cout << "Impares leidos: " << impar << endl;
+	
+	
 	return 345;
 }
 
