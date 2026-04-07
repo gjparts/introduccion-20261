@@ -94,11 +94,50 @@ int main(){
 	for(int i = 100; i >= 0; i-=10) //es lo mismo que decir i = i - 10
 		cout << i << endl;
 	
-	//la variable de control no nedesariamente debe de ser int, puede ser double o float
+	//la variable de control no necesariamente debe de ser int, puede ser double o float
 	//por ejemplo para contar intervalos en decimales:
 	//imprima los numeros del 0 al 5, de 0.25 en 0.25
 	for(double i = 0; i <= 5; i += 0.25)
 		cout << i << endl;
+	
+	/*Haga un programa que recorra los numeros del 1 al 25, luego imprima cuantos de esos
+	numeros son pares y cuantos son impares*/
+	//primero declare las variables contador:
+	int pares = 0;
+	int impares = 0;
+	//las variables contador siempre se inicializan en cero.
+	
+	for(int i = 1; i <= 25; i++)
+	{
+		if( i%2 == 0 )
+			pares++;	//pares = pares + 1; (operador de incremento)
+		else
+			impares++;	//impares = impares + 1
+	}
+	//imprimir resultados:
+	cout << "Cantidad de pares: " << pares << endl;
+	cout << "Cantidad de impares: " << impares << endl;
+	
+	/*IMPORTANTE: --------------------------------------------------
+	En una estructura de repeticion tambien es posible realizar captura de valores
+	en cada iteracion, ejemplo:
+	
+	Haga un programa que pregunte 5 numeros al usuario, al finalizar el programa
+	debera mostrar la suma de esos 5 numeros.
+	*/
+	double suma = 0; //variable contador o acumulador
+	
+	//5 iteraciones
+	for(int i = 1; i <= 5; i++)
+	{	
+		double numero; //variable temporal para leer cada numero
+		cout << "Digite un numero: ";
+		cin >> numero;
+		
+		//sumar el numero leido a la variable acumulador:
+		suma = suma + numero;
+	}
+	cout << "La suma de los numeros leidos es: " << suma << endl;
 	
 	return 345;
 }
