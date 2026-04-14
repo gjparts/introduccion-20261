@@ -53,14 +53,6 @@ int main()
 		break;
 	}
 	
-	/*Ejercicio en clase: Haga un programa que genere 10 numeros al azar entre 0 y 100, imprima
-	los numeros generados y luego imprima un resume indicando cuantos de los numeros generados
-	fueron pares y cuantos impares. No importa que se repitan numeros.
-	Requisito: hagalo usando la estructura de repeticion for.*/
-	
-	
-	
-	
 	return 876;
 }
 
